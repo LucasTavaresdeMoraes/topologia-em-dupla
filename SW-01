@@ -1,0 +1,30 @@
+enable
+config t
+hostname SW-01
+enable secret LUCAS*enable
+line console 0
+password LUCAS*console
+login
+banner motd "ACESSO APENAS PARA PESSOAS AUTORIZADAS!"
+ip domain-name 1rede.local
+crypto key generate rsa general-key modulus 1024
+line vty 0 15
+transport input ssh
+password cisco
+login
+exit
+username lucastavares privilege 15 secret 28112003
+line console 0
+login local
+exit
+ip default-gateway 172.16.0.1
+line vty 0 15
+login local
+exit
+interface vlan 1
+ip address 192.168.10.254 255.255.255.0
+no shutdown
+exit
+service password-encryption
+end
+wr
