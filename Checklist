@@ -1,0 +1,83 @@
+RT - 01
+
+
+* Hostname RT-01
+* Senha da Enable (enable secret LUCAS*enable)
+* Senha da Console (password LUCAS*console)
+* Dominio (ip domain-name 1rede.local)
+* Chave de Criptografia (crypto key generatersa gneral-key modulus 1024)
+* Senha da VTY (password LUCAS*vty)
+* Ativar login local na Console (login local)
+* Ativar login local na VTY (login local)
+* Criptar as senhas (service password-encryption)
+* IP na G0/0
+* IP 192.168.10.1
+* MÀSCARA 255.255.255.0
+* Ativar interface (no shutdown)
+* IP na G0/1
+* IP 172.16.0.1
+* MÀSCARA 255.255.0.0
+* Salvar as configurações (wr)
+
+
+SW - 01
+
+* Hostname SW-01
+* Senha da Enable (enable secret LUCAS*enable)
+* Senha da Console (password LUCAS*console)
+* Dominio (ip domain-name 1rede.local)
+* Chave de Criptografia (crypto key generatersa gneral-key modulus 1024)
+* Senha da VTY (password LUCAS*vty)
+* Ativar login local na Console (login local)
+* Ativar login local na VTY (login local)
+* Criptar as senhas (service password-encryption)
+* IP na VLAN 1
+* IP 192.168.0.254
+* MÀSCARA 255.255.255.0
+* Ativar interface (no shutdown)
+* inserir o Gateway(no default gateway 192.168.0.1)
+* Salvar as configurações (wr)
+
+
+SW - 02
+
+* Hostname SW-02
+* Senha da Enable (enable secret LUCAS*enable)
+* Senha da Console (password LUCAS*console)
+* Dominio (ip domain-name 1rede.local)
+* Chave de Criptografia (crypto key generatersa gneral-key modulus 1024)
+* Senha da VTY (password LUCAS*vty)
+* Ativar login local na Console (login local)
+* Ativar login local na VTY (login local)
+* Criptar as senhas (service password-encryption)
+* IP na VLAN 1
+* IP 192.168.0.254
+* MÀSCARA 255.255.0.
+* Ativar interface (no shutdown)
+* inserir o Gateway(no default gateway 172.168.0.1)
+* Salvar as configurações (wr)
+
+
+PC - 01
+
+* Trocar nome para PC -01
+* IP : 192.168.0.10
+* Máscara : 255.255.255.0
+* Gateway : 192.168.0.1
+
+
+PC - 02
+
+* Trocar nome para PC-02
+* IP : 172.16.0.10
+* Máscara : 255.255.0.0
+* Gateway : 172.16.0.1
+
+
+
+
+
+
+
+
+
